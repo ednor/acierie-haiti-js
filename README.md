@@ -43,4 +43,4 @@ Ce projet est le site web officiel de l'**Aciérie d'Haïti**, une entreprise sp
 3. Le projet ne nécessite aucune étape de compilation ou d'installation de dépendances côté serveur.
 
 ---
-© 2024 Aciérie d'Haïti. Tous droits réservés.
+© 2026 Aciérie d'Haïti. Tous droits réservés.
