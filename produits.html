@@ -1,0 +1,508 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Produits | Aciérie d'Haïti</title>
+    <meta
+      content="Découvrez les principaux produits proposés par Aciérie d'Haïti pour les chantiers résidentiels, commerciaux et industriels."
+      name="description"
+    />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
+    <link
+      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3 smart-navbar">
+      <div class="container">
+        <a aria-label="Aciérie d'Haïti" class="navbar-brand brand-mark" href="index.html">
+          <span class="brand-mono">AH</span>
+          <span class="brand-stack">
+            <span class="brand-line-top">Aciérie</span>
+            <span class="brand-line-bottom">d'Haïti</span>
+          </span>
+        </a>
+        <button
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Ouvrir le menu"
+          class="navbar-toggler"
+          data-bs-target="#mainNav"
+          data-bs-toggle="collapse"
+          type="button"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="a-propos.html">À propos</a></li>
+            <li class="nav-item"><a aria-current="page" class="nav-link active" href="produits.html">Produits</a></li>
+            <li class="nav-item"><a class="nav-link" href="projets.html">Projets</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item ms-lg-2"><a class="btn btn-brand rounded-pill px-4" href="demande-devis.html">Demander un devis</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="page-hero">
+      <div class="container">
+        <span class="hero-badge"><i class="bi bi-box-seam"></i> Nos produits</span>
+        <h1 class="page-title">Des produits pour les chantiers et les professionnels</h1>
+        <p class="lead text-white-50 col-lg-8">
+          Découvrez une sélection de produits destinés à répondre aux besoins de la construction, avec des solutions adaptées aux réalités du marché
+          haïtien.
+        </p>
+      </div>
+    </header>
+    <section class="section-space pb-0">
+      <div class="container">
+        <div class="product-toolbar reveal">
+          <div class="row g-3 align-items-center">
+            <div class="col-lg-5">
+              <label class="form-label small fw-semibold mb-2" for="productSearch">Recherche rapide</label>
+              <div class="input-group">
+                <span class="input-group-text bg-white"><i class="bi bi-search"></i></span>
+                <input class="form-control" id="productSearch" placeholder="Rechercher un produit" type="search" />
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <label class="form-label small fw-semibold mb-2" for="productFilter">Filtrer par catégorie</label>
+              <select class="form-select" id="productFilter">
+                <option value="all">Toutes les catégories</option>
+                <option value="acier">Acier</option>
+                <option value="fixation">Fixation</option>
+                <option value="structure">Structure</option>
+                <option value="bois">Bois</option>
+                <option value="service">Logistique</option>
+              </select>
+            </div>
+            <div class="col-lg-3">
+              <div class="cart-mini">
+                <span class="small fw-semibold d-block mb-1">Demande en cours</span>
+                <div class="d-flex align-items-center justify-content-between gap-3">
+                  <strong><span id="cartCount">0</span> article(s)</strong>
+                  <button class="btn btn-sm btn-brand rounded-pill px-3" id="openCart" type="button">Voir la sélection</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-space">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-6 col-xl-4">
+            <div
+              class="project-card bg-white overflow-hidden h-100 reveal"
+              data-category="acier"
+              data-name="Fers à béton"
+              data-price="1850"
+              data-search="fers à béton fers à béton barres utilisées pour le renforcement des structures en béton armé, adaptées à différents types de chantiers."
+            >
+              <img alt=" fers à béton" class="product-thumb reveal" loading="lazy" src="images/fer-beton.jpg" />
+              <div class="p-4">
+                <div class="icon-box mb-3"><i class="bi bi-boxes"></i></div>
+                <h5 class="fw-bold">Fers à béton</h5>
+                <p class="small-muted mb-0">
+                  Barres utilisées pour le renforcement des structures en béton armé, adaptées à différents types de chantiers.
+                </p>
+                <div class="product-meta">
+                  <div>
+                    <p class="product-price mb-1">1,850 HTG</p>
+                    <p class="product-price-note mb-0">Prix indicatif, pour la demande en ligne</p>
+                  </div>
+                  <span class="badge text-bg-light border text-uppercase">acier</span>
+                </div>
+                <div class="product-actions">
+                  <div class="qty-stepper" data-qty-wrap="">
+                    <button aria-label="Réduire" class="qty-btn" data-qty="minus" type="button">-</button>
+                    <input aria-label="Quantité" class="qty-input" inputmode="numeric" max="999" min="1" type="number" value="1" />
+                    <button aria-label="Augmenter" class="qty-btn" data-qty="plus" type="button">+</button>
+                  </div>
+                  <button class="btn btn-brand rounded-pill add-to-cart" type="button">Ajouter à la demande</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <div
+              class="project-card bg-white overflow-hidden h-100 reveal"
+              data-category="fixation"
+              data-name="Fils d'attache"
+              data-price="950"
+              data-search="fils d'attache fils d'attache produits utilisés pour l'assemblage sur chantier et la préparation des armatures avant coulage."
+            >
+              <img alt=" fils d'attache" class="product-thumb reveal" loading="lazy" src="images/fil.jpg" />
+              <div class="p-4">
+                <div class="icon-box mb-3"><i class="bi bi-link-45deg"></i></div>
+                <h5 class="fw-bold">Fils d'attache</h5>
+                <p class="small-muted mb-0">Produits utilisés pour l'assemblage sur chantier et la préparation des armatures avant coulage.</p>
+                <div class="product-meta">
+                  <div>
+                    <p class="product-price mb-1">950 HTG</p>
+                    <p class="product-price-note mb-0">Prix indicatif, pour la demande en ligne</p>
+                  </div>
+                  <span class="badge text-bg-light border text-uppercase">fixation</span>
+                </div>
+                <div class="product-actions">
+                  <div class="qty-stepper" data-qty-wrap="">
+                    <button aria-label="Réduire" class="qty-btn" data-qty="minus" type="button">-</button>
+                    <input aria-label="Quantité" class="qty-input" inputmode="numeric" max="999" min="1" type="number" value="1" />
+                    <button aria-label="Augmenter" class="qty-btn" data-qty="plus" type="button">+</button>
+                  </div>
+                  <button class="btn btn-brand rounded-pill add-to-cart" type="button">Ajouter à la demande</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <div
+              class="project-card bg-white overflow-hidden h-100 reveal"
+              data-category="fixation"
+              data-name="Clous et fixations"
+              data-price="1250"
+              data-search="clous et fixations clous et fixations éléments indispensables pour les travaux de montage, de coffrage et de finition dans plusieurs contextes."
+            >
+              <img alt=" clous et fixations" class="product-thumb reveal" loading="lazy" src="images/clous2.jpg" />
+              <div class="p-4">
+                <div class="icon-box mb-3"><i class="bi bi-hammer"></i></div>
+                <h5 class="fw-bold">Clous et fixations</h5>
+                <p class="small-muted mb-0">
+                  Éléments indispensables pour les travaux de montage, de coffrage et de finition dans plusieurs contextes.
+                </p>
+                <div class="product-meta">
+                  <div>
+                    <p class="product-price mb-1">1,250 HTG</p>
+                    <p class="product-price-note mb-0">Prix indicatif, pour la demande en ligne</p>
+                  </div>
+                  <span class="badge text-bg-light border text-uppercase">fixation</span>
+                </div>
+                <div class="product-actions">
+                  <div class="qty-stepper" data-qty-wrap="">
+                    <button aria-label="Réduire" class="qty-btn" data-qty="minus" type="button">-</button>
+                    <input aria-label="Quantité" class="qty-input" inputmode="numeric" max="999" min="1" type="number" value="1" />
+                    <button aria-label="Augmenter" class="qty-btn" data-qty="plus" type="button">+</button>
+                  </div>
+                  <button class="btn btn-brand rounded-pill add-to-cart" type="button">Ajouter à la demande</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <div
+              class="project-card bg-white overflow-hidden h-100 reveal"
+              data-category="structure"
+              data-name="Profilés structuraux"
+              data-price="4200"
+              data-search="profilés structuraux profilés structuraux tubes et éléments métalliques utilisés pour des structures légères ou semi-lourdes selon les besoins du projet."
+            >
+              <img alt=" profilés structuraux" class="product-thumb reveal" loading="lazy" src="images/profiles.jpg" />
+              <div class="p-4">
+                <div class="icon-box mb-3"><i class="bi bi-columns-gap"></i></div>
+                <h5 class="fw-bold">Profilés structuraux</h5>
+                <p class="small-muted mb-0">
+                  Tubes et éléments métalliques utilisés pour des structures légères ou semi-lourdes selon les besoins du projet.
+                </p>
+                <div class="product-meta">
+                  <div>
+                    <p class="product-price mb-1">4,200 HTG</p>
+                    <p class="product-price-note mb-0">Prix indicatif, pour la demande en ligne</p>
+                  </div>
+                  <span class="badge text-bg-light border text-uppercase">structure</span>
+                </div>
+                <div class="product-actions">
+                  <div class="qty-stepper" data-qty-wrap="">
+                    <button aria-label="Réduire" class="qty-btn" data-qty="minus" type="button">-</button>
+                    <input aria-label="Quantité" class="qty-input" inputmode="numeric" max="999" min="1" type="number" value="1" />
+                    <button aria-label="Augmenter" class="qty-btn" data-qty="plus" type="button">+</button>
+                  </div>
+                  <button class="btn btn-brand rounded-pill add-to-cart" type="button">Ajouter à la demande</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <div
+              class="project-card bg-white overflow-hidden h-100 reveal"
+              data-category="bois"
+              data-name="Bois et matériaux complémentaires"
+              data-price="2750"
+              data-search="bois et matériaux complémentaires bois et matériaux complémentaires des produits qui complètent les chantiers, notamment pour le coffrage, le support temporaire et certains aménagements."
+            >
+              <img alt=" bois et matériaux complémentaires" class="product-thumb reveal" loading="lazy" src="images/bois.jpg" />
+              <div class="p-4">
+                <div class="icon-box mb-3"><i class="bi bi-tree"></i></div>
+                <h5 class="fw-bold">Bois et matériaux complémentaires</h5>
+                <p class="small-muted mb-0">
+                  Des produits qui complètent les chantiers, notamment pour le coffrage, le support temporaire et certains aménagements.
+                </p>
+                <div class="product-meta">
+                  <div>
+                    <p class="product-price mb-1">2,750 HTG</p>
+                    <p class="product-price-note mb-0">Prix indicatif, pour la demande en ligne</p>
+                  </div>
+                  <span class="badge text-bg-light border text-uppercase">bois</span>
+                </div>
+                <div class="product-actions">
+                  <div class="qty-stepper" data-qty-wrap="">
+                    <button aria-label="Réduire" class="qty-btn" data-qty="minus" type="button">-</button>
+                    <input aria-label="Quantité" class="qty-input" inputmode="numeric" max="999" min="1" type="number" value="1" />
+                    <button aria-label="Augmenter" class="qty-btn" data-qty="plus" type="button">+</button>
+                  </div>
+                  <button class="btn btn-brand rounded-pill add-to-cart" type="button">Ajouter à la demande</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <div
+              class="project-card bg-white overflow-hidden h-100 reveal"
+              data-category="service"
+              data-name="Approvisionnement et logistique"
+              data-price="3500"
+              data-search="approvisionnement et logistique approvisionnement et logistique organisation des livraisons et suivi des besoins pour limiter les ruptures sur les chantiers."
+            >
+              <img alt=" approvisionnement et logistique" class="product-thumb reveal" loading="lazy" src="images/livraison.jpg" />
+              <div class="p-4">
+                <div class="icon-box mb-3"><i class="bi bi-truck-front"></i></div>
+                <h5 class="fw-bold">Approvisionnement et logistique</h5>
+                <p class="small-muted mb-0">Organisation des livraisons et suivi des besoins pour limiter les ruptures sur les chantiers.</p>
+                <div class="product-meta">
+                  <div>
+                    <p class="product-price mb-1">3,500 HTG</p>
+                    <p class="product-price-note mb-0">Prix indicatif, pour la demande en ligne</p>
+                  </div>
+                  <span class="badge text-bg-light border text-uppercase">service</span>
+                </div>
+                <div class="product-actions">
+                  <div class="qty-stepper" data-qty-wrap="">
+                    <button aria-label="Réduire" class="qty-btn" data-qty="minus" type="button">-</button>
+                    <input aria-label="Quantité" class="qty-input" inputmode="numeric" max="999" min="1" type="number" value="1" />
+                    <button aria-label="Augmenter" class="qty-btn" data-qty="plus" type="button">+</button>
+                  </div>
+                  <button class="btn btn-brand rounded-pill add-to-cart" type="button">Ajouter à la demande</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="empty-products text-center py-5 d-none" id="productEmptyState">
+          <i class="bi bi-search fs-1 d-block mb-3"></i>
+          <h3 class="h5 fw-bold">Aucun produit trouvé</h3>
+          <p class="small-muted mb-0">Essaie une autre recherche ou réinitialise le filtre.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section-space section-light">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5">
+            <span class="badge-soft mb-3 d-inline-flex">Pourquoi ces produits</span>
+            <h2 class="section-title">Une offre pensée pour les réalités du chantier</h2>
+            <p class="section-subtitle">
+              Cette sélection met en avant des produits utiles aux chantiers, avec une présentation claire et structurée pour faciliter la découverte
+              de l’offre.
+            </p>
+            <ul class="list-check mt-4">
+              <li>Des produits destinés aux besoins courants du bâtiment.</li>
+              <li>Une offre pensée pour les professionnels et les projets de construction.</li>
+              <li>Une présentation visuelle simple pour mieux parcourir l’inventaire.</li>
+              <li>Des informations claires pour découvrir chaque catégorie de produit.</li>
+            </ul>
+          </div>
+          <div class="col-lg-7">
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="info-card p-4 bg-white reveal">
+                  <h5 class="fw-bold">Résidentiel</h5>
+                  <p class="small-muted mb-0">Maisons, immeubles résidentiels, rénovations et extensions.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-card p-4 bg-white reveal">
+                  <h5 class="fw-bold">Commercial</h5>
+                  <p class="small-muted mb-0">Magasins, bureaux, dépôts et bâtiments de services.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-card p-4 bg-white reveal">
+                  <h5 class="fw-bold">Industriel</h5>
+                  <p class="small-muted mb-0">Entrepôts, ateliers, structures techniques et zones de production.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-card p-4 bg-white reveal">
+                  <h5 class="fw-bold">Institutionnel</h5>
+                  <p class="small-muted mb-0">Écoles, centres de santé, bâtiments administratifs et infrastructures collectives.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-space">
+      <div class="container">
+        <div class="mb-5">
+          <span class="badge-soft mb-3 d-inline-flex">Questions fréquentes</span>
+          <h2 class="section-title">FAQ produits et contact</h2>
+          <p class="section-subtitle">
+            Retrouver ici quelques réponses utiles sur les produits proposés, les types de clients servis et les moyens de contact.
+          </p>
+        </div>
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item mb-3 reveal">
+            <h2 class="accordion-header">
+              <button
+                aria-controls="faqOne"
+                aria-expanded="true"
+                class="accordion-button"
+                data-bs-target="#faqOne"
+                data-bs-toggle="collapse"
+                type="button"
+              >
+                Quels types de clients peuvent être servis ?
+              </button>
+            </h2>
+            <div class="accordion-collapse collapse show" data-bs-parent="#faqAccordion" id="faqOne">
+              <div class="accordion-body">
+                Les produits conviennent aux particuliers, entreprises, institutions et responsables de grands chantiers.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item mb-3 reveal">
+            <h2 class="accordion-header">
+              <button
+                aria-controls="faqTwo"
+                aria-expanded="false"
+                class="accordion-button collapsed"
+                data-bs-target="#faqTwo"
+                data-bs-toggle="collapse"
+                type="button"
+              >
+                L'entreprise propose-t-elle seulement de l'acier ?
+              </button>
+            </h2>
+            <div class="accordion-collapse collapse" data-bs-parent="#faqAccordion" id="faqTwo">
+              <div class="accordion-body">
+                Non. Le site présente aussi des produits complémentaires utiles aux chantiers, comme les clous, les fils d'attache et certains
+                matériaux connexes.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item reveal">
+            <h2 class="accordion-header">
+              <button
+                aria-controls="faqThree"
+                aria-expanded="false"
+                class="accordion-button collapsed"
+                data-bs-target="#faqThree"
+                data-bs-toggle="collapse"
+                type="button"
+              >
+                Comment demander des informations ou un devis ?
+              </button>
+            </h2>
+            <div class="accordion-collapse collapse" data-bs-parent="#faqAccordion" id="faqThree">
+              <div class="accordion-body">
+                Il suffit d’utiliser la page Contact pour demander des renseignements complémentaires ou entrer en relation avec l’entreprise.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer pt-5 pb-4 mt-0">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <h5 class="fw-bold text-white">Aciérie d'Haïti</h5>
+            <p>
+              Une entreprise haïtienne spécialisée dans les matériaux métalliques et les solutions destinées aux projets résidentiels, commerciaux et
+              industriels.
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-2">
+            <h6 class="text-white fw-bold">Navigation</h6>
+            <ul class="list-unstyled small">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="a-propos.html">À propos</a></li>
+              <li><a href="produits.html">Produits</a></li>
+              <li><a href="projets.html">Projets</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="demande-devis.html">Demander un devis</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <h6 class="text-white fw-bold">Coordonnées</h6>
+            <ul class="list-unstyled small">
+              <li>RN1, Port-au-Prince, Haïti</li>
+              <li>+509 28 14 0000</li>
+              <li>www.acieriedhaiti.com</li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <h6 class="text-white fw-bold">Horaires</h6>
+            <ul class="list-unstyled small">
+              <li>Lundi à Vendredi, 8h00 à 17h00</li>
+              <li>Samedi, 8h00 à 15h00</li>
+              <li>Dimanche, Fermé</li>
+            </ul>
+          </div>
+        </div>
+        <hr class="border-light border-opacity-25 my-4" />
+        <div class="d-flex flex-column flex-md-row justify-content-between gap-2 small">
+          <span>© <span id="currentYear"></span> Aciérie d'Haïti. Tous droits réservés.</span>
+          <span>Une entreprise haïtienne active dans la fourniture de produits destinés aux besoins de la construction et du bâtiment.</span>
+        </div>
+      </div>
+    </footer>
+    <script
+      crossorigin="anonymous"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    ></script>
+    <script src="js/script.js"></script>
+    <button aria-label="Retour en haut" class="back-to-top" id="backToTop" type="button"><i class="bi bi-arrow-up"></i></button>
+    <div aria-hidden="true" class="cart-panel" id="quoteCartPanel">
+      <div class="cart-panel-dialog">
+        <div class="cart-panel-header">
+          <div>
+            <p class="small text-uppercase fw-semibold mb-1">Demande en ligne</p>
+            <h3 class="h5 mb-0">Votre sélection</h3>
+          </div>
+          <button aria-label="Fermer" class="cart-close" id="closeCart" type="button"><i class="bi bi-x-lg"></i></button>
+        </div>
+        <div class="cart-panel-body">
+          <div id="cartItems"></div>
+          <div class="cart-empty text-center py-4" id="cartEmpty">
+            <i class="bi bi-cart3 fs-1 d-block mb-3"></i>
+            <p class="mb-0">Ajoute des produits pour préparer une demande de prix ou une commande.</p>
+          </div>
+        </div>
+        <div class="cart-panel-footer">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <span class="fw-semibold">Total estimatif</span>
+            <strong id="cartTotal">0 HTG</strong>
+          </div>
+          <div class="d-grid gap-2">
+            <a class="btn btn-brand rounded-pill" href="demande-devis.html" id="sendCartToContact">Envoyer vers le devis</a>
+            <a class="btn btn-outline-dark rounded-pill" href="#" id="sendCartWhatsApp">Partager sur WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cart-backdrop" id="cartBackdrop"></div>
+  </body>
+</html>

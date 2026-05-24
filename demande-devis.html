@@ -1,0 +1,222 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Demande de devis | Aciérie d'Haïti</title>
+    <meta
+      content="Demande de devis et d’approvisionnement auprès d’Aciérie d’Haïti pour recueillir les besoins en matériaux, quantités, délai souhaité et coordonnées."
+      name="description"
+    />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
+    <link
+      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3 smart-navbar">
+      <div class="container">
+        <a aria-label="Aciérie d'Haïti" class="navbar-brand brand-mark" href="index.html">
+          <span class="brand-mono">AH</span>
+          <span class="brand-stack">
+            <span class="brand-line-top">Aciérie</span>
+            <span class="brand-line-bottom">d'Haïti</span>
+          </span>
+        </a>
+        <button
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Ouvrir le menu"
+          class="navbar-toggler"
+          data-bs-target="#mainNav"
+          data-bs-toggle="collapse"
+          type="button"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="a-propos.html">À propos</a></li>
+            <li class="nav-item"><a class="nav-link" href="produits.html">Produits</a></li>
+            <li class="nav-item"><a class="nav-link" href="projets.html">Projets</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item ms-lg-2"><a class="btn btn-brand rounded-pill px-4" href="demande-devis.html">Demander un devis</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="page-hero">
+      <div class="container">
+        <span class="hero-badge"><i class="bi bi-file-earmark-text"></i> Devis et approvisionnement</span>
+        <h1 class="page-title">Demande de devis et d’approvisionnement</h1>
+        <p class="lead text-white-50 col-lg-8">
+          Cette page permet de recueillir vos besoins en matériaux, les quantités souhaitées, le délai de livraison souhaité et vos coordonnées, afin
+          de préparer une réponse commerciale adaptée.
+        </p>
+      </div>
+    </header>
+    <section class="section-space">
+      <div class="container">
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-5">
+            <div class="contact-card p-4 p-lg-5 bg-white reveal h-100">
+              <span class="badge-soft mb-3 d-inline-flex">Mission</span>
+              <h2 class="section-title h3">Préparer une réponse commerciale claire</h2>
+              <p class="small-muted">
+                Renseignez les matériaux recherchés, les quantités estimées, le délai souhaité et vos coordonnées. Ces informations permettront de
+                préparer une proposition adaptée à votre besoin d’approvisionnement.
+              </p>
+              <ul class="list-unstyled quote-need-list mt-4 mb-0">
+                <li><i class="bi bi-check-circle-fill"></i> Identification des matériaux demandés</li>
+                <li><i class="bi bi-check-circle-fill"></i> Quantités ou volumes estimés</li>
+                <li><i class="bi bi-check-circle-fill"></i> Délai souhaité pour la livraison ou la disponibilité</li>
+                <li><i class="bi bi-check-circle-fill"></i> Coordonnées du client pour le suivi commercial</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="contact-card p-4 p-lg-5 bg-white reveal">
+              <span class="badge-soft mb-3 d-inline-flex">Formulaire</span>
+              <h2 class="section-title h3">Décrivez votre demande</h2>
+              <form class="row g-3 mt-2" data-netlify="true" id="quoteRequestForm" method="POST" name="demande-devis" netlify-honeypot="bot-field">
+                <input name="form-name" type="hidden" value="demande-devis" />
+                <p class="d-none">
+                  <label>Ne pas remplir si vous êtes humain : <input name="bot-field" /></label>
+                </p>
+                <div class="col-md-6">
+                  <label class="form-label" for="quoteName">Nom complet</label>
+                  <input class="form-control" id="quoteName" name="nom" placeholder="Votre nom complet" required="" type="text" />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="quoteCompany">Entreprise</label>
+                  <input class="form-control" id="quoteCompany" name="entreprise" placeholder="Nom de votre entreprise" type="text" />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="quoteEmail">Adresse email</label>
+                  <input class="form-control" id="quoteEmail" name="email" placeholder="nom@exemple.com" required="" type="email" />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="quotePhone">Téléphone</label>
+                  <input class="form-control" id="quotePhone" name="telephone" placeholder="+509 ..." required="" type="tel" />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="quoteMaterial">Matériau principal</label>
+                  <select class="form-select" id="quoteMaterial" name="materiau_principal" required="">
+                    <option disabled="" selected="" value="">Choisir un matériau</option>
+                    <option>Fers à béton</option>
+                    <option>Fils d'attache</option>
+                    <option>Clous et fixations</option>
+                    <option>Profilés métalliques</option>
+                    <option>Bois et matériaux complémentaires</option>
+                    <option>Approvisionnement mixte</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="quoteQuantity">Quantité estimée</label>
+                  <input
+                    class="form-control"
+                    id="quoteQuantity"
+                    name="quantite"
+                    placeholder="Ex. 50 unités, 20 barres, 3 palettes"
+                    required=""
+                    type="text"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="quoteDeadline">Délai souhaité</label>
+                  <input class="form-control" id="quoteDeadline" name="delai" required="" type="date" />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="quoteLocation">Lieu de livraison ou de retrait</label>
+                  <input class="form-control" id="quoteLocation" name="lieu" placeholder="Commune, chantier ou entrepôt" type="text" />
+                </div>
+                <div class="col-12">
+                  <label class="form-label" for="quoteDetails">Détails de la demande</label>
+                  <textarea
+                    class="form-control"
+                    id="quoteDetails"
+                    name="details"
+                    placeholder="Précisez les matériaux, dimensions, références ou toute information utile..."
+                    required=""
+                    rows="6"
+                  ></textarea>
+                  <div class="form-text text-end" id="quoteDetailsCount">0 / 800 caractères</div>
+                </div>
+                <div class="col-12" id="quoteFormStatus"><div aria-live="polite" class="form-status"></div></div>
+                <div class="col-12 d-flex flex-wrap gap-3">
+                  <button class="btn btn-brand btn-lg rounded-pill px-4" type="submit">Envoyer la demande</button>
+                  <a class="btn btn-outline-secondary btn-lg rounded-pill px-4" href="contact.html">Nous contacter autrement</a>
+                </div>
+              </form>
+              <div class="quote-summary-card mt-4 d-none" id="quoteSummaryCard">
+                <h3 class="h5 mb-3">Résumé de votre demande</h3>
+                <div class="small-muted" id="quoteSummaryContent"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer pt-5 pb-4 mt-0">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <h5 class="fw-bold text-white">Aciérie d'Haïti</h5>
+            <p>
+              Une entreprise haïtienne spécialisée dans les matériaux métalliques et les solutions destinées aux projets résidentiels, commerciaux et
+              industriels.
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-2">
+            <h6 class="text-white fw-bold">Navigation</h6>
+            <ul class="list-unstyled small">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="a-propos.html">À propos</a></li>
+              <li><a href="produits.html">Produits</a></li>
+              <li><a href="projets.html">Projets</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="demande-devis.html">Demander un devis</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <h6 class="text-white fw-bold">Coordonnées</h6>
+            <ul class="list-unstyled small">
+              <li>RN1, Port-au-Prince, Haïti</li>
+              <li>+509 28 14 0000</li>
+              <li>www.acieriedhaiti.com</li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <h6 class="text-white fw-bold">Horaires</h6>
+            <ul class="list-unstyled small">
+              <li>Lundi à Vendredi, 8h00 à 17h00</li>
+              <li>Samedi, 8h00 à 15h00</li>
+              <li>Dimanche, Fermé</li>
+            </ul>
+          </div>
+        </div>
+        <hr class="border-light border-opacity-25 my-4" />
+        <div class="d-flex flex-column flex-md-row justify-content-between gap-2 small">
+          <span>© <span id="currentYear"></span> Aciérie d'Haïti. Tous droits réservés.</span>
+          <span>Une entreprise haïtienne active dans la fourniture de produits destinés aux besoins de la construction et du bâtiment.</span>
+        </div>
+      </div>
+    </footer>
+    <script
+      crossorigin="anonymous"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    ></script>
+    <script src="js/script.js"></script>
+    <button aria-label="Retour en haut" class="back-to-top" id="backToTop" type="button"><i class="bi bi-arrow-up"></i></button>
+  </body>
+</html>

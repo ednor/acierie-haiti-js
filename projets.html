@@ -1,0 +1,234 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Projets | Aciérie d'Haïti</title>
+    <meta
+      content="Projets réalisés par Aciérie d'Haïti, entreprise spécialisée dans les matériaux de construction et les solutions métallurgiques en Haïti."
+      name="description"
+    />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
+    <link
+      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3 smart-navbar">
+      <div class="container">
+        <a aria-label="Aciérie d'Haïti" class="navbar-brand brand-mark" href="index.html">
+          <span class="brand-mono">AH</span>
+          <span class="brand-stack">
+            <span class="brand-line-top">Aciérie</span>
+            <span class="brand-line-bottom">d'Haïti</span>
+          </span>
+        </a>
+        <button
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Ouvrir le menu"
+          class="navbar-toggler"
+          data-bs-target="#mainNav"
+          data-bs-toggle="collapse"
+          type="button"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="a-propos.html">À propos</a></li>
+            <li class="nav-item"><a class="nav-link" href="produits.html">Produits</a></li>
+            <li class="nav-item"><a aria-current="page" class="nav-link active" href="projets.html">Projets</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item ms-lg-2"><a class="btn btn-brand rounded-pill px-4" href="demande-devis.html">Demander un devis</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="page-hero">
+      <div class="container">
+        <span class="hero-badge"><i class="bi bi-kanban"></i> Réalisations</span>
+        <h1 class="page-title">Des projets qui illustrent notre savoir-faire</h1>
+        <p class="lead text-white-50 col-lg-8">
+          Cette page met en avant quelques réalisations illustrant l’expérience de l’entreprise dans le domaine de la construction et des matériaux.
+        </p>
+      </div>
+    </header>
+    <section class="section-space">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="project-card bg-white h-100 overflow-hidden reveal">
+              <img alt="Projet de structure métallique" class="reveal" loading="lazy" src="images/hangar.jpg" />
+              <div class="p-4">
+                <div class="project-tags mb-3">
+                  <span class="badge text-bg-light border">Profilés</span>
+                  <span class="badge text-bg-light border">Entrepôt</span>
+                </div>
+                <h5 class="fw-bold">Hangar logistique</h5>
+                <p class="small-muted">
+                  Fourniture de profilés et éléments métalliques pour un espace de stockage destiné à une activité commerciale.
+                </p>
+                <button
+                  class="btn btn-brand rounded-pill px-4"
+                  data-bs-target="#projectDetailsModal"
+                  data-bs-toggle="modal"
+                  data-project='{"title": "Hangar logistique", "text": "Ce projet illustre l&apos;utilisation de profilés métalliques et d&apos;éléments de structure pour un espace de stockage à usage intensif. L&apos;objectif est de garantir résistance, durabilité et flexibilité d&apos;exploitation.", "items": ["Profilés structuraux pour la charpente", "Clous et fixations pour travaux secondaires", "Conseil sur la préparation des fournitures"], "meta": "Typologie : entrepôt logistique"}'
+                >
+                  Voir plus
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="project-card bg-white h-100 overflow-hidden reveal">
+              <img alt="Projet d'approvisionnement chantier" class="reveal" loading="lazy" src="images/chantier.jpg" />
+              <div class="p-4">
+                <div class="project-tags mb-3">
+                  <span class="badge text-bg-light border">Livraison</span>
+                  <span class="badge text-bg-light border">Chantier</span>
+                </div>
+                <h5 class="fw-bold">Appui à un chantier résidentiel</h5>
+                <p class="small-muted">
+                  Approvisionnement progressif de matériaux afin de soutenir le rythme d'exécution d'un programme résidentiel.
+                </p>
+                <button
+                  class="btn btn-brand rounded-pill px-4"
+                  data-bs-target="#projectDetailsModal"
+                  data-bs-toggle="modal"
+                  data-project='{"title": "Appui à un chantier résidentiel", "text": "Exemple d&apos;accompagnement axé sur la fourniture progressive de matériaux, avec une attention particulière à la disponibilité des produits et à la coordination des livraisons.", "items": ["Barres d&apos;armature pour les fondations et poteaux", "Fils d&apos;attache pour la préparation des cages", "Suivi logistique pour limiter les interruptions"], "meta": "Typologie : chantier résidentiel"}'
+                >
+                  Voir plus
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="project-card bg-white h-100 overflow-hidden reveal">
+              <img alt="Projet de bâtiment commercial" class="reveal" loading="lazy" src="images/batiment.jpg" />
+              <div class="p-4">
+                <div class="project-tags mb-3">
+                  <span class="badge text-bg-light border">Commerce</span>
+                  <span class="badge text-bg-light border">Structure</span>
+                </div>
+                <h5 class="fw-bold">Bâtiment commercial</h5>
+                <p class="small-muted">Sélection de matériaux pour la construction d'un bâtiment à usage commercial et de services.</p>
+                <button
+                  class="btn btn-brand rounded-pill px-4"
+                  data-bs-target="#projectDetailsModal"
+                  data-bs-toggle="modal"
+                  data-project='{"title": "Bâtiment commercial", "text": "Le projet met en valeur la combinaison de produits métalliques et de matériaux complémentaires nécessaires à un bâtiment accueillant du public ou des activités commerciales.", "items": ["Matériaux pour structures et renforts", "Fixations adaptées à plusieurs étapes du chantier", "Approche orientée vers la durabilité"], "meta": "Typologie : bâtiment commercial"}'
+                >
+                  Voir plus
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-space section-light">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="stat-card metric bg-white reveal">
+              <h3>1972</h3>
+              <p>Une entreprise liée au secteur depuis plusieurs décennies</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="stat-card metric bg-white reveal">
+              <h3>Local</h3>
+              <p>Une présence au service du secteur de la construction</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="stat-card metric bg-white reveal">
+              <h3>Expérience</h3>
+              <p>Un savoir-faire illustré par plusieurs réalisations</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer pt-5 pb-4 mt-0">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <h5 class="fw-bold text-white">Aciérie d'Haïti</h5>
+            <p>
+              Une entreprise haïtienne spécialisée dans les matériaux métalliques et les solutions destinées aux projets résidentiels, commerciaux et
+              industriels.
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-2">
+            <h6 class="text-white fw-bold">Navigation</h6>
+            <ul class="list-unstyled small">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="a-propos.html">À propos</a></li>
+              <li><a href="produits.html">Produits</a></li>
+              <li><a href="projets.html">Projets</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="demande-devis.html">Demander un devis</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <h6 class="text-white fw-bold">Coordonnées</h6>
+            <ul class="list-unstyled small">
+              <li>RN1, Port-au-Prince, Haïti</li>
+              <li>+509 28 14 0000</li>
+              <li>www.acieriedhaiti.com</li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <h6 class="text-white fw-bold">Horaires</h6>
+            <ul class="list-unstyled small">
+              <li>Lundi à Vendredi, 8h00 à 17h00</li>
+              <li>Samedi, 8h00 à 15h00</li>
+              <li>Dimanche, Fermé</li>
+            </ul>
+          </div>
+        </div>
+        <hr class="border-light border-opacity-25 my-4" />
+        <div class="d-flex flex-column flex-md-row justify-content-between gap-2 small">
+          <span>© <span id="currentYear"></span> Aciérie d'Haïti. Tous droits réservés.</span>
+          <span>Une entreprise haïtienne active dans la fourniture de produits destinés aux besoins de la construction et du bâtiment.</span>
+        </div>
+      </div>
+    </footer>
+    <script
+      crossorigin="anonymous"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    ></script>
+    <script src="js/script.js"></script>
+    <button aria-label="Retour en haut" class="back-to-top" id="backToTop" type="button"><i class="bi bi-arrow-up"></i></button>
+    <div aria-hidden="true" aria-labelledby="projectDetailsModalLabel" class="modal fade" id="projectDetailsModal" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content border-0 rounded-4 overflow-hidden">
+          <div class="modal-header bg-dark text-white">
+            <div>
+              <p class="modal-eyebrow mb-1">Détail du projet</p>
+              <h5 class="modal-title" id="projectDetailsModalLabel">Projet</h5>
+            </div>
+            <button aria-label="Fermer" class="btn-close btn-close-white" data-bs-dismiss="modal" type="button"></button>
+          </div>
+          <div class="modal-body p-4">
+            <p class="small-muted fw-semibold mb-3" id="projectDetailsMeta"></p>
+            <p id="projectDetailsText"></p>
+            <ul class="list-check" id="projectDetailsList"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

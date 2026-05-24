@@ -1,0 +1,328 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Aciérie d'Haïti, Accueil</title>
+    <meta
+      content="Découvrez Aciérie d'Haïti, entreprise spécialisée dans les matériaux de construction et les solutions métallurgiques en Haïti."
+      name="description"
+    />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
+    <link
+      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3 smart-navbar">
+      <div class="container">
+        <a aria-label="Aciérie d'Haïti" class="navbar-brand brand-mark" href="index.html">
+          <span class="brand-mono">AH</span>
+          <span class="brand-stack">
+            <span class="brand-line-top">Aciérie</span>
+            <span class="brand-line-bottom">d'Haïti</span>
+          </span>
+        </a>
+        <button
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Ouvrir le menu"
+          class="navbar-toggler"
+          data-bs-target="#mainNav"
+          data-bs-toggle="collapse"
+          type="button"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item"><a aria-current="page" class="nav-link active" href="index.html">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="a-propos.html">À propos</a></li>
+            <li class="nav-item"><a class="nav-link" href="produits.html">Produits</a></li>
+            <li class="nav-item"><a class="nav-link" href="projets.html">Projets</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item ms-lg-2"><a class="btn btn-brand rounded-pill px-4" href="demande-devis.html">Demander un devis</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="hero-wrap">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <span class="hero-badge"><i class="bi bi-buildings"></i> Entreprise haïtienne de référence en métallurgie</span>
+            <h1 class="display-4 fw-bold">Des matériaux fiables pour des chantiers durables</h1>
+            <p class="lead text-white-50 mb-4">
+              Aciérie d'Haïti propose une gamme de produits métalliques et de matériaux complémentaires pour accompagner les projets résidentiels,
+              commerciaux et industriels à travers le pays.
+            </p>
+            <div class="d-flex flex-wrap gap-3 mb-4">
+              <a class="btn btn-brand btn-lg rounded-pill px-4" href="produits.html">Découvrir nos produits</a>
+              <a class="btn btn-outline-brand btn-lg rounded-pill px-4" href="projets.html">Voir nos projets</a>
+            </div>
+            <div class="d-flex flex-wrap gap-3">
+              <div class="hero-stat reveal">
+                <h3 data-count="1972">1972</h3>
+                <p>Année de fondation</p>
+              </div>
+              <div class="hero-stat reveal">
+                <h3 data-count="5" data-suffix="+">5+</h3>
+                <p>Familles de produits</p>
+              </div>
+              <div class="hero-stat reveal">
+                <h3 data-count="600" data-suffix="+">600+</h3>
+                <p>Emplois directs et indirects</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="carousel slide hero-visual" data-bs-ride="carousel" id="heroCarousel">
+              <div class="carousel-indicators">
+                <button
+                  aria-current="true"
+                  aria-label="Diapositive 1"
+                  class="active"
+                  data-bs-slide-to="0"
+                  data-bs-target="#heroCarousel"
+                  type="button"
+                ></button>
+                <button aria-label="Diapositive 2" data-bs-slide-to="1" data-bs-target="#heroCarousel" type="button"></button>
+                <button aria-label="Diapositive 3" data-bs-slide-to="2" data-bs-target="#heroCarousel" type="button"></button>
+                <button aria-label="Diapositive 3" data-bs-slide-to="3" data-bs-target="#heroCarousel" type="button"></button>
+              </div>
+              <div class="carousel-inner rounded-4 overflow-hidden">
+                <div class="carousel-item active">
+                  <img alt="Illustration de site industriel" class="img-fluid" loading="lazy" src="images/fer.jpg" />
+                </div>
+                <div class="carousel-item">
+                  <img alt="Illustration de structure métallique" class="img-fluid" loading="lazy" src="images/clous.jpg" />
+                </div>
+                <div class="carousel-item">
+                  <img alt="Illustration de chantier" class="img-fluid" loading="lazy" src="images/planches.jpg" />
+                </div>
+                <div class="carousel-item">
+                  <img alt="Illustration de chantier" class="img-fluid" loading="lazy" src="images/profiles-metalliques.jpg" />
+                </div>
+              </div>
+              <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#heroCarousel" type="button">
+                <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Précédent</span>
+              </button>
+              <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#heroCarousel" type="button">
+                <span aria-hidden="true" class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Suivant</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="section-space">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="stat-card metric reveal">
+              <h3>Produits</h3>
+              <p>Une gamme de produits pensée pour les besoins du bâtiment.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="stat-card metric reveal">
+              <h3>Qualité</h3>
+              <p>Des matériaux adaptés aux projets de construction.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="stat-card metric reveal">
+              <h3>Proximité</h3>
+              <p>Un acteur de référence au service du secteur de la construction en Haïti.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-space section-light">
+      <div class="container">
+        <div class="mb-5">
+          <span class="badge-soft mb-3 d-inline-flex">Nos points forts</span>
+          <h2 class="section-title">Une présence forte dans l'univers de la construction</h2>
+          <p class="section-subtitle">
+            L'entreprise met l'accent sur la solidité, la disponibilité des produits et l'accompagnement des clients afin de répondre aux besoins des
+            chantiers modernes en Haïti.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-xl-3">
+            <div class="feature-card p-4 bg-white reveal">
+              <div class="icon-box mb-3"><i class="bi bi-grid-1x2-fill"></i></div>
+              <h5 class="fw-bold">Barres d'armature</h5>
+              <p class="small-muted mb-0">Des produits adaptés au renforcement des structures en béton et aux besoins des chantiers exigeants.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="feature-card p-4 bg-white reveal">
+              <div class="icon-box mb-3"><i class="bi bi-tools"></i></div>
+              <h5 class="fw-bold">Fils et clous</h5>
+              <p class="small-muted mb-0">Une gamme utile pour l'assemblage, la fixation et les travaux de finition sur les sites de construction.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="feature-card p-4 bg-white reveal">
+              <div class="icon-box mb-3"><i class="bi bi-diagram-3"></i></div>
+              <h5 class="fw-bold">Profilés métalliques</h5>
+              <p class="small-muted mb-0">Tubes et éléments structuraux pour les ouvrages résidentiels, commerciaux ou industriels.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="feature-card p-4 bg-white reveal">
+              <div class="icon-box mb-3"><i class="bi bi-truck"></i></div>
+              <h5 class="fw-bold">Approvisionnement</h5>
+              <p class="small-muted mb-0">Un service orienté vers la régularité des livraisons et la disponibilité des matériaux pour les projets.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-space">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <img alt="Chronologie de l'entreprise" class="img-fluid rounded-4 shadow-sm border reveal" loading="lazy" src="images/timeline.jpg" />
+          </div>
+          <div class="col-lg-6">
+            <span class="badge-soft mb-3 d-inline-flex">À découvrir</span>
+            <h2 class="section-title">Une entreprise au service de la construction en Haïti</h2>
+            <ul class="list-check mt-4">
+              <li>Des solutions pour les chantiers en Haïti</li>
+              <li>Une entreprise pensée pour la continuité des projets</li>
+              <li>Des produits adaptés aux besoins des chantiers et des professionnels du bâtiment.</li>
+              <li>Des projets qui illustrent son savoir-faire et sa présence sur le marché.</li>
+            </ul>
+            <a class="btn btn-brand rounded-pill px-4 mt-3" href="a-propos.html">Lire l'histoire de l'entreprise</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-space section-light">
+      <div class="container">
+        <div class="mb-5">
+          <span class="badge-soft mb-3 d-inline-flex">Travaux réalisés</span>
+          <h2 class="section-title">Quelques projets représentatifs</h2>
+          <p class="section-subtitle">
+            Cette section valorise des réalisations types pour montrer la variété des besoins couverts par Aciérie d'Haïti.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="project-card bg-white overflow-hidden reveal">
+              <img alt="Projet structure métallique" class="reveal" loading="lazy" src="images/entrepots.jpg" />
+              <div class="p-4">
+                <h5 class="fw-bold">Structures pour entrepôts</h5>
+                <p class="small-muted">Fourniture de profilés et d'éléments métalliques pour des espaces de stockage robustes et modulables.</p>
+                <a class="fw-semibold" href="projets.html">Voir le détail <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="project-card bg-white overflow-hidden reveal">
+              <img alt="Projet approvisionnement matériaux" class="reveal" loading="lazy" src="images/chantiers.jpg" />
+              <div class="p-4">
+                <h5 class="fw-bold">Approvisionnement de chantier</h5>
+                <p class="small-muted">Livraison coordonnée de matériaux pour maintenir le rythme d'exécution des travaux.</p>
+                <a class="fw-semibold" href="projets.html">Voir le détail <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="project-card bg-white overflow-hidden reveal">
+              <img alt="Projet bâtiment" class="reveal" loading="lazy" src="images/batiments-commerciaux.jpg" />
+              <div class="p-4">
+                <h5 class="fw-bold">Bâtiments commerciaux</h5>
+                <p class="small-muted">Solutions adaptées pour la construction et la consolidation d'espaces commerciaux à forte fréquentation.</p>
+                <a class="fw-semibold" href="projets.html">Voir le détail <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-space">
+      <div class="container">
+        <div class="page-banner-card p-4 p-lg-5">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-8">
+              <span class="badge-soft mb-3 d-inline-flex">Besoin d'informations ?</span>
+              <h2 class="fw-bold">Parlons de votre projet de construction</h2>
+              <p class="mb-0 small-muted">
+                Consultez nos produits, explorez nos projets ou utilisez la page contact pour envoyer une demande détaillée.
+              </p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+              <a class="btn btn-brand btn-lg rounded-pill px-4" href="contact.html">Contactez-nous</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer pt-5 pb-4 mt-0">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <h5 class="fw-bold text-white">Aciérie d'Haïti</h5>
+            <p>
+              Une entreprise haïtienne spécialisée dans les matériaux métalliques et les solutions destinées aux projets résidentiels, commerciaux et
+              industriels.
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-2">
+            <h6 class="text-white fw-bold">Navigation</h6>
+            <ul class="list-unstyled small">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="a-propos.html">À propos</a></li>
+              <li><a href="produits.html">Produits</a></li>
+              <li><a href="projets.html">Projets</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="demande-devis.html">Demander un devis</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <h6 class="text-white fw-bold">Coordonnées</h6>
+            <ul class="list-unstyled small">
+              <li>RN1, Port-au-Prince, Haïti</li>
+              <li>+509 28 14 0000</li>
+              <li>www.acieriedhaiti.com</li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <h6 class="text-white fw-bold">Horaires</h6>
+            <ul class="list-unstyled small">
+              <li>Lundi à Vendredi, 8h00 à 17h00</li>
+              <li>Samedi, 8h00 à 15h00</li>
+              <li>Dimanche, Fermé</li>
+            </ul>
+          </div>
+        </div>
+        <hr class="border-light border-opacity-25 my-4" />
+        <div class="d-flex flex-column flex-md-row justify-content-between gap-2 small">
+          <span>© <span id="currentYear"></span> Aciérie d'Haïti. Tous droits réservés.</span>
+          <span>Une entreprise haïtienne active dans la fourniture de produits destinés aux besoins de la construction et du bâtiment.</span>
+        </div>
+      </div>
+    </footer>
+    <script
+      crossorigin="anonymous"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    ></script>
+    <script src="js/script.js"></script>
+    <button aria-label="Retour en haut" class="back-to-top" id="backToTop" type="button"><i class="bi bi-arrow-up"></i></button>
+  </body>
+</html>
